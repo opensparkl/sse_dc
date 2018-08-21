@@ -1,0 +1,18 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+    </style>
+  </defs>
+  <title>sparkl</title>
+  <g>
+    <circle class="cls-1" cx="68" cy="148" r="20"/>
+    <circle class="cls-1" cx="165.15" cy="166.35" r="45"/>
+    <circle class="cls-1" cx="108" cy="71.65" r="22"/>
+  </g>
+</svg>

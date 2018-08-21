@@ -1,0 +1,98 @@
+@import "colors";
+
+@mixin button-color($color) {
+  background: $color;
+  box-shadow: 0 2px 5px 0 mix($color, transparent, 40%);
+
+  &:hover {
+    background: mix($color, #000000, 95%);
+  }
+
+  &:active {
+    background: mix($color, #ffffff, 95%);
+  }
+}
+
+@mixin button-color-blur ($color, $blur) {
+  $spread: #{$blur * 2 + 1px};
+
+  background: $color;
+  box-shadow: 0 $blur $spread 0 mix($color, transparent, 40%);
+
+  &:hover {
+    background: mix($color, #000000, 95%);
+  }
+
+  &:active {
+    background: mix($color, #ffffff, 95%);
+  }
+}
+
+button.button {
+  display: inline-block;
+  box-sizing: content-box;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  vertical-align: top;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 500ms;
+
+  @include button-color($blue);
+
+  &.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  &.green {
+    @include button-color($green);
+  }
+
+  &.red {
+    @include button-color($red);
+  }
+
+  &.rounded {
+    border-radius: 200px;
+  }
+
+  &.medium {
+    padding: 0;
+    line-height: 26px;
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include button-color-blur ($blue, 2px);
+
+    &.green {
+      @include button-color-blur ($green, 2px);
+    }
+
+    &.red {
+      @include button-color-blur ($red, 2px);
+    }
+  }
+
+  &.large {
+    padding: 0;
+    line-height: 32px;
+    min-width: 108px;
+
+    @include button-color-blur ($blue, 2px);
+
+    &.green {
+      @include button-color-blur ($green, 2px);
+    }
+
+    &.red {
+      @include button-color-blur ($red, 2px);
+    }
+  }
+}

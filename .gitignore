@@ -1,0 +1,9 @@
+.DS_Store
+bower_components/
+node_modules/
+dist/
+src/generated/*.js*
+npm-debug.log
+package-lock.json
+test/unit/coverage/*
+test/e2e/reports

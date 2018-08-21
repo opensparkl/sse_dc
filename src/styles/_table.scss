@@ -1,0 +1,35 @@
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout:fixed;
+  text-align: left;
+
+  tr {
+    &.clickable {
+      cursor: pointer;
+    }
+
+    th {
+      color: #333;
+      font-weight: 600;
+    }
+
+    td, th {
+      box-sizing: border-box;
+      padding: 6px 8px;
+      word-break: break-all;
+      line-height: 1.41;
+    }
+
+    &.selected {
+      background: #F9FAFC;
+    }
+  }
+}
+
+.empty-label {
+  padding: 20px;
+  width: 100%;
+  color: #aaa;
+  text-align: center;
+}

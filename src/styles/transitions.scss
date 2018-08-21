@@ -1,0 +1,24 @@
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 400ms, transform 400ms;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity 0.3s;
+}
+.component-fade-enter, .component-fade-leave-to {
+  opacity: 0;
+}
+
+.fade-reverse-enter-active, .fade-reverse-leave-active {
+  transition: opacity 400ms, transform 400ms;
+}
+
+.fade-reverse-enter, .fade-reverse-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}

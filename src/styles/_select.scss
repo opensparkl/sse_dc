@@ -1,0 +1,19 @@
+select.pretty {
+  display: block;
+  cursor: pointer;
+
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+
+  line-height: 32px;
+  height: 32px;
+
+  width: 100%;
+  background: transparent;
+
+  border: 1px solid #eaeefb;
+  box-shadow: 0 0 4px 0 rgba(232, 237, 250, 0.6),
+    0 2px 4px 0 rgba(232, 237, 250, 0.5);
+}

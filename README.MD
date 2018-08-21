@@ -1,4 +1,12 @@
-## Building scripts
+# OpenSPARKL Developer Console
+[OpenSPARKL Project Home](http://opensparkl.org)
+
+The sse_dc is a web UI for managing running SPARKL nodes.
+
+This is a dependency of [sse_core](https://github.com/opensparkl/sse_core) and
+does not normally need to be cloned separately.
+
+# Building scripts
 
 ``` bash
 # install dependencies
@@ -17,7 +25,7 @@ npm run build
 npm run lint
 ```
 
-## Project structure
+# Project structure
 
 * `build` - building scripts.<br>
 * `config` - configuration for building scripts.
@@ -35,9 +43,9 @@ npm run lint
   * `App.vue` - root component.
   * `main.js` - application entery point (main file).
 
-## Config
+# Config
 
-### API
+## API
 
 It is possible to overwrite default values of configuration and cache these changes in localStorage.
 
@@ -65,7 +73,7 @@ config.version()
 config.hash()
 ```
 
-### Structure
+## Structure
 
 Example of `config.json` file:
 

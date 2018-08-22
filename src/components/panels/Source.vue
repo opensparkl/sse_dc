@@ -17,19 +17,17 @@
   <panel v-if="html"
          title="Source"
          class="source-panel">
+
     <div slot="buttons"
+         @click="getPath"
          style="font-size: 11px; color: #8898A5;">
-      {{this.node.attr.id}}
+      {{this.node.attr.path}}
     </div>
 
     <div style="display: flex; padding-bottom: 10px;">
       <button class="button-a small align-left"
               @click="download">
         <i class="fa fa-download" />
-      </button>
-      <button class="button-a small align-left"
-              @click="getPath">
-        <i class="fa fa-search" />
       </button>
       <button class="button-a small align-left"
               :class="{ blue: isShowAll }"
@@ -130,8 +128,7 @@ export default {
     },
 
     getPath () {
-      let resource_path = this.node.attr.path
-      this.$clipboard(resource_path)
+      this.$clipboard(this.node.attr.path)
 
       return this.$notify({
           type: 'success',
@@ -163,8 +160,13 @@ export default {
 
   .panel-header {
     padding-bottom: 0;
+
+    .panel-buttons:hover {
+        cursor: pointer;
+    }
   }
 }
+
 
 .code-view {
   position: relative;

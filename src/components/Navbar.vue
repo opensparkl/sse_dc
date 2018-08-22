@@ -45,7 +45,7 @@
         <i class="fa fa-fw fa-comments" aria-hidden="true"/>
       </button>
       <button class="button-a" @click="openListener">
-        <i class="fa fa-bar-chart" aria-hidden="true"/>
+        <i class="fas fa-stethoscope" aria-hidden="true"/>
       </button>
       <a class="button-a"
          target="_blank"
